@@ -123,7 +123,7 @@ function LoginForm() {
     <div className="w-full max-w-md space-y-8 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md">
       <div className="text-center">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-          AllMart Marketplace
+          Naarico Marketplace
         </h1>
         <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
           Sign In
@@ -214,7 +214,7 @@ export default function LoginPage() {
     <Suspense fallback={<div className="w-full max-w-md space-y-8 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md">
       <div className="text-center">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-          AllMart Marketplace
+          Naarico Marketplace
         </h1>
         <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
           Loading...

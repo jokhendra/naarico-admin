@@ -141,7 +141,7 @@ export default function CreateStorePage() {
           <CardHeader>
             <CardTitle>Store Information</CardTitle>
             <CardDescription>
-              Create a new store to start selling on AllMart marketplace
+              Create a new store to start selling on Naarico marketplace
             </CardDescription>
           </CardHeader>
           <CardContent>

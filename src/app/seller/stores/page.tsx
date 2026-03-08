@@ -157,7 +157,7 @@ export default function SellerStoresPage() {
           <Card>
             <CardHeader>
               <CardTitle>No Stores Yet</CardTitle>
-              <CardDescription>Create your first store to start selling on AllMart</CardDescription>
+              <CardDescription>Create your first store to start selling on Naarico</CardDescription>
             </CardHeader>
             <CardContent>
               <Link href="/seller/stores/new">
