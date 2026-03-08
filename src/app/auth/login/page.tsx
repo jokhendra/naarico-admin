@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect, FormEvent, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -122,13 +123,19 @@ function LoginForm() {
   return (
     <div className="w-full max-w-md space-y-8 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md">
       <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-          Naarico Marketplace
+        <div className="relative mx-auto h-16 w-44 mb-4">
+          <Image src="/images/logo/naarico-logo.jpeg" alt="Naarico" fill className="object-contain" priority />
+        </div>
+        <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+          Naarico
         </h1>
-        <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
+        <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+          Suits & Sarees
+        </p>
+        <h2 className="mt-6 text-xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
           Sign In
         </h2>
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+        <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
           Admin & Seller Portal
         </p>
       </div>
@@ -213,8 +220,8 @@ export default function LoginPage() {
   return (
     <Suspense fallback={<div className="w-full max-w-md space-y-8 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md">
       <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-          Naarico Marketplace
+        <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+          Naarico
         </h1>
         <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
           Loading...

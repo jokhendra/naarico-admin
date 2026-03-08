@@ -20,6 +20,7 @@ import {
   Store,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/hooks/use-auth";
 
@@ -183,7 +184,7 @@ export function Sidebar({
   const routes = isAdmin ? adminRoutes : (isSeller ? sellerRoutes : []);
   
   // Update portal title based on role
-  const portalTitle = isAdmin ? "Admin Portal" : (isSeller ? "Seller Portal" : "Portal");
+  const portalTitle = isAdmin ? "Naarico Admin" : (isSeller ? "Naarico Seller" : "Naarico");
 
   return (
     <div className={cn(
@@ -195,11 +196,16 @@ export function Sidebar({
         "flex items-center",
         isCollapsed ? "justify-center" : "justify-between"
       )}>
-        {!isCollapsed && (
-          <span className="text-xl font-bold">{portalTitle}</span>
-        )}
+        <Link href="/dashboard" className="flex items-center gap-2 min-w-0">
+          <div className="relative h-8 w-24 flex-shrink-0">
+            <Image src="/images/logo/naarico-logo.jpeg" alt="Naarico" fill className="object-contain object-left" />
+          </div>
+          {!isCollapsed && (
+            <span className="text-sm font-bold truncate">{portalTitle}</span>
+          )}
+        </Link>
         {isMobile && !isCollapsed && (
-          <button onClick={onClose} className="p-2">
+          <button onClick={onClose} className="p-2 flex-shrink-0">
             <span className="sr-only">Close sidebar</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

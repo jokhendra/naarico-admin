@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "All Mart Admin Portal",
-  description: "Enterprise-level admin dashboard",
+  title: "Naarico Admin",
+  description: "Naarico – Suits & Sarees. Admin and seller dashboard.",
 };
 
 // Split the layout into server and client components

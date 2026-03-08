@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -67,10 +68,13 @@ export default function RegisterPage() {
   return (
     <div className="w-full max-w-md space-y-8 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md">
       <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-          E-Commerce Admin
+        <div className="relative mx-auto h-14 w-36 mb-4">
+          <Image src="/images/logo/naarico-logo.jpeg" alt="Naarico" fill className="object-contain" priority />
+        </div>
+        <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+          Naarico Admin
         </h1>
-        <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
+        <h2 className="mt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
           Create a new account
         </h2>
       </div>
